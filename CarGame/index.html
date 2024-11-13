@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Endless Traffic Driving Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="carSelection">
+        <h2>Select Your Car</h2>
+        <div id="carOptions"></div>
+        <button id="startGame">Start Game</button>
+    </div>
+
+    <div id="upgradeMenu">
+        <h2>Upgrade Your Car</h2>
+        <p>Points Available: <span id="availablePoints"></span></p>
+        <button id="increaseSpeed">Increase Speed (Cost: 100)</button>
+        <button id="increaseHandling">Increase Handling (Cost: 100)</button>
+        <button id="closeUpgradeMenu">Close</button>
+    </div>
+
+    <div id="achievementsMenu">
+        <h2>Achievements</h2>
+        <ul id="achievementsList"></ul>
+        <button id="closeAchievementsMenu">Close</button>
+    </div>
+
+    <div id="leaderboardMenu">
+        <h2>Leaderboard</h2>
+        <ol id="leaderboardList"></ol>
+        <button id="closeLeaderboardMenu">Close</button>
+    </div>
+
+    <canvas id="gameCanvas" width="400" height="600"></canvas>
+
+    <button id="upgradeButton">Upgrade Car</button>
+    <button id="achievementsButton">Achievements</button>
+    <button id="leaderboardButton">Leaderboard</button>
+
+    <audio id="engineSound" src="assets/engine.mp3" loop></audio>
+    <audio id="crashSound" src="assets/crash.mp3"></audio>
+
+    <script src="game.js"></script>
+</body>
+</html>

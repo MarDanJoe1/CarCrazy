@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+canvas {
+    background: #333;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+
+#upgradeMenu,
+#achievementsMenu,
+#leaderboardMenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #222;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    display: none;
+    z-index: 10;
+}
+
+#carSelection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #222;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+}
+
+#carOptions img {
+    width: 80px;
+    height: 160px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+#carOptions img.selected {
+    border-color: gold;
+}
+
+#upgradeButton,
+#achievementsButton,
+#leaderboardButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-left: 10px;
+}
+
+#upgradeButton {
+    right: 150px;
+}
+
+#achievementsButton {
+    right: 280px;
+}
+
+#leaderboardButton {
+    right: 10px;
+}
+
+button {
+    background: #444;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
